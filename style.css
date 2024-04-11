@@ -146,7 +146,30 @@ header{
     font-weight: 700;
     font-size: 15px;
 }
+
+.shop-header{
+    background-color: #464646;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
+
+.shop-header h1,
+.shop-header p{
+    color: #fff;
+}
+
+
+
+
+
 .produtos{
+    padding: 40px 80px;
     margin-top: 150px;
     text-align: center;
 }
@@ -421,6 +444,14 @@ footer a:hover{
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+}
+
+
+/* Pagina de Compra*/
+
+.produto-img{
+    width: 40%;
+    margin-right: 50px;
 }
 
 
