@@ -73,9 +73,16 @@
             <img src="../imgs/camisas/barcelona-23-24.png" 
             alt="Camisa Barcelona 2023-2024"
             width="100%"
+            id="img-main"
             >
             <div class="img">
-                <div class="img-col"><img src="../imgs/camisas/barcelona-23-24.png" 
+                <div class="img-col"><img src="../imgs/camisas/barcelona2.png" 
+                    alt="Camisa Barcelona 2023-2024"
+                    width="100%"
+                    class="img-col-img"
+                    >
+                </div>
+                <div class="img-col"><img src="../imgs/camisas/barcelona3.png" 
                     alt="Camisa Barcelona 2023-2024"
                     width="100%"
                     class="img-col-img"
@@ -95,7 +102,84 @@
                 </div>
             </div>
         </div>
+
+        <div class="produto-detail">
+          <h6>Barcelona 2024</h6>
+          <h4>Uniforme de Jogo</h4>
+          <h2>R$ 220.00</h2>
+          <select name="" id="">
+            <option value="">Tamanho</option>
+            <option value="">P</option>
+            <option value="">M</option>
+            <option value="">G</option>
+            <option value="">XG</option>
+          </select>
+          <input type="number" value="1">
+          <button>Adicionar ao Carrinho</button>
+          <h4>Detalhes de Fabricação</h4>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid,
+             quidem ab aut odio doloribus dignissimos nihil voluptatum sed 
+            minus tenetur porro dolorum, alias magnam ducimus adipisci eaque illum accusamus?</span>
+        </div>
     </section>
+
+    <section class="produtos">
+      <h2>Camisas dos nossos time</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, explicabo. 
+        Fuga, nihil. Quidem quibusdam 
+        consectetur enim temporibus quam laborum omnis vero officiis accusamus, 
+        nostrum quos modi animi in tempore earum.</p>
+    <div class="produtos-container">
+
+      <div class="produto">
+        <img src="../imgs/camisas/barcelona-23-24.png" 
+        alt="Camisa Barecelona 23/24"
+        >
+        <div class="descricao">
+          <span>Adidas</span>
+          <h5>Camisa do Barcelona 2023-2024</h5>
+          <h4>R$ 200,00</h4>
+        </div>
+    </div>
+      <div class="produto">
+        <img src="../imgs/camisas/barcelona-23-24.png" 
+        alt="Camisa Barecelona 23/24"
+        >
+        <div class="descricao">
+          <span>Adidas</span>
+          <h5>Camisa do Barcelona 2023-2024</h5>
+          <h4>R$ 200,00</h4>
+        </div>
+    </div>
+      <div class="produto">
+        <img src="../imgs/camisas/barcelona-23-24.png" 
+        alt="Camisa Barecelona 23/24"
+        >
+        <div class="descricao">
+          <span>Adidas</span>
+          <h5>Camisa do Barcelona 2023-2024</h5>
+          <h4>R$ 200,00</h4>
+        </div>
+    </div>
+      <div class="produto">
+        <img src="../imgs/camisas/barcelona-23-24.png" 
+        alt="Camisa Barecelona 23/24"
+        >
+        <div class="descricao">
+          <span>Adidas</span>
+          <h5>Camisa do Barcelona 2023-2024</h5>
+          <h4>R$ 200,00</h4>
+        </div>
+    </div>
+  
+</div>
+  
+ </section>
+
+ 
+
+
+
 
     <section class="email-input">
       <div class="des-email">
@@ -181,7 +265,30 @@
  
 
 
+  <script>
 
-  <script src="../script.js"></script>
+     var img = document.getElementById("img-main");
+     var imgcol = document.getElementsByClassName("img-col-img");
+
+    imgcol[0].onclick = function(){
+      img.src = imgcol[0].src;
+    }
+    imgcol[1].onclick = function(){
+      img.src = imgcol[1].src;
+    }
+    imgcol[2].onclick = function(){
+      img.src = imgcol[2].src;
+    }
+    imgcol[3].onclick = function(){
+      img.src = imgcol[3].src;
+    }
+
+  </script>
+
+  <script src="../script.js">
+   
+
+
+  </script>
 </body>
 </html> 

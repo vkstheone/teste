@@ -36,6 +36,7 @@ p{
 
 .section-p1{
     padding: 40px 80px;
+    margin: 40px 0;
 }
 
 .section-m1{
@@ -204,6 +205,103 @@ header{
     border-radius: 20px;
 
 }
+
+/*Pagina de compra das Camisas*/
+
+.produto-img {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.produtos-compra{
+    padding: 40px 80px;
+    margin: 40px 0;
+    display: flex;
+    margin-top: 20px;
+}
+
+.produto-detail{
+    width: 50%;
+    padding-top: 30px;
+}
+.produto-detail h4{
+    padding: 40px 0 20px 0;
+}
+
+.produto-detail h2{
+    font-size: 28px;
+}
+
+.produto-detail select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.produto-detail input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.produto-detail button{
+    background-color: #041181;
+    padding: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-size: 14;
+}
+
+/* pagina de  Contato*/
+
+.contato{
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.details{
+    width: 40%;
+}
+
+.details{
+    font-size: 12px;
+}
+
+.details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+.details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+
+
+
 
 .descricao{
     text-align: start;
@@ -470,10 +568,7 @@ footer a:hover{
         background-color: #e3e6f3;
         box-shadow: 0 40px 60px rgba(0,0,0, 0.1);
         padding: 80px 0 0 10px;
-     
         transition: 0.5s;
-
-
     }
 
 
@@ -525,4 +620,10 @@ footer a:hover{
         padding: 0 20px;
         background-position: 55%;
     }
+    .produto-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
