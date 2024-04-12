@@ -10,29 +10,35 @@
  
   <header>
 
-    <section class="navbar-logo">
-    <a href="">
+    
+
+  <section class="navbar-logo">
+    <div>  
+      <a href="">
       <img 
       src="imgs/logo.png" 
       class="logo" 
       width="100px"
       alt="log imagem"
       ></a>
-    </section>
+    </div>
+    <div>
+      <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+  </div>
+  
+  </section>
     
-    <section class="navbar">
+  <section class="navbar">
       <ul id="nav-ul">
         <li><a class="active" href="index.html">Pagina Inicial</a></li>
         <li><a href="pages/shop.html">Loja</a></li>
         <li><a href="pages/contato.html">Contato</a></li>
-        <div>
-          <input type="checkbox" class="checkbox" id="chk">
-            <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
-            </label>
-        </div>  
+        
           <a href="#" id="close-toggle"><img src="imgs/icons/close.png" width="15px" alt=""></a>
     
         
@@ -50,14 +56,7 @@
         id="toggle">
       </div>
       <div>
-        <div>
-          <input type="checkbox" class="checkbox" id="chk">
-            <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
-            </label>
-        </div>  
+        
 
       
     
@@ -80,11 +79,8 @@
     </section>
 
   <section class="produtos">
-      <h2>Camisas dos nossos time</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, explicabo. 
-        Fuga, nihil. Quidem quibusdam 
-        consectetur enim temporibus quam laborum omnis vero officiis accusamus, 
-        nostrum quos modi animi in tempore earum.</p>
+      <h2>Camisas</h2>
+      <p>So Aqui Voce Encontra as camisas dos Melhores Clube Do Mundo.</p>
       <article class="produtos-container">
         <article class="produto">
           <img src="imgs/camisas/barcelona-23-24.png" 
@@ -156,7 +152,7 @@
             <h4>R$ 200,00</h4>
           </article>
       </article>
-        <article class="produto">
+      <article class="produto">
           <img src="imgs/camisas/atletico.webp" 
           alt="Camisa Atletico de MAdrid"
           >
@@ -177,23 +173,8 @@
       <button><a href="pages/shop.html">Explore mais</a></button>
     </section>
 
-    <!-- <section class="banner">
-      <div id="bainer1" class="banner-container">
-        <h4>Crazy</h4>
-        <h2>So para Alunos PD</h2>
-        <span>The best Classic Dress </span>
-        <button>ver mais</button>
-      </div>
-      
-      <div id="banner2"  class="banner-container">
-        <h4>Crazy</h4>
-        <h2>So para Alunos PD</h2>
-        <span>The best Classic Dress </span>
-        <button>ver mais</button>
-      </div>
-    </section>
-
-    <section class="email-input">
+    
+  <section class="email-input">
       <div class="des-email">
         <h4>Deixe Seu email</h4>
         <p>Receba nossas promacoes <span>Especial ofertas</span></p>
@@ -202,14 +183,17 @@
         <input type="text" placeholder="Deixe Seu email">
         <button type="submit" >Enviar</button>
       </div>
-    </section> -->
+  </section>
     
   </main>
 
 
   <footer>
     <div class="coluna-footer">
-      <img src="imgs/logo.png" alt="Logo">
+      <img src="imgs/logo.png" 
+      alt="Logo"
+      class="logo"
+      >
       <h4>Contato</h4>
       <p><strong>Endereço:</strong> Rua Lionel Messi - 10 - Senhora Carmo, Itabira MG</p>
       <p><strong>Telefone</strong> (31) 4031-2774 </p>
@@ -219,10 +203,10 @@
       <div class="colunm">
           <h4>Siga-nos nas Nossas Rede Sociais</h4>
           <div class="icon">
-              <a href="#"><img src="./imgs/icons/insta.png" alt=""></a>
-              <a href="#"><img src="./imgs/icons/face.png" alt=""></a>
-              <a href="#"><img src="./imgs/icons/telegran.png" alt=""></a>
-              <a href="#"><img src="./imgs/icons/whats.png" alt=""></a>
+              <a href="#"><img src="./imgs/icons/insta.png" alt="Siga no Instagram"></a>
+              <a href="#"><img src="./imgs/icons/face.png" alt="Siga no Facebook"></a>
+              <a href="#"><img src="./imgs/icons/telegran.png" alt="Mande Mensagem no Telegram"></a>
+              <a href="#"><img src="./imgs/icons/whats.png" alt="Mande Mensagem no Whatssap"></a>
        </div>
     </div>  
       
@@ -231,18 +215,18 @@
 
       <div class="colunm">
         <h4>Sobre-nos</h4>
-        <a href="">Informacoes de Entrega</a>
-        <a href="">Politica de Privacidade</a>
-        <a href="">Termos e Condiçoes</a>
-        <a href="">Contate nos</a>
+        <a href="#">Informacoes de Entrega</a>
+        <a href="#">Politica de Privacidade</a>
+        <a href="#">Termos e Condiçoes</a>
+        <a href="#">Contate nos</a>
       </div>
      
       <div class="colunm">
         <h4></h4>
-        <a href="">Informacoes de Entrega</a>
-        <a href="">Politica de Privacidade</a>
-        <a href="">Termos e Condiçoes</a>
-        <a href="">Contate nos</a>
+        <a href="#">Informacoes de Entrega</a>
+        <a href="#">Politica de Privacidade</a>
+        <a href="#">Termos e Condiçoes</a>
+        <a href="#">Contate nos</a>
       </div>
 
       <div class="colunm">
@@ -254,7 +238,7 @@
 
         </div>
         
-        <p>Pagamento  Seguro, celo de segurança</p>
+        <p>Pag-seguro, celo de segurança</p>
         <!-- <img src="imgs/icons/compra.png" alt="Compra Segura" width="200px"> -->
 
       </div>

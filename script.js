@@ -23,4 +23,8 @@ const chk = document.getElementById('chk');
 
 chk.addEventListener('click', () => {
     document.body.classList.toggle('dark')
+    document.querySelector('.painel').classList.toggle('dark');
+    document.querySelector('.produtos').classList.toggle('dark');
+    document.querySelector('footer').classList.toggle('dark');
+    document.querySelector('.copyright').classList.toggle('dark');
 })

@@ -55,6 +55,16 @@ header{
     top: 0;
     left:0;
 }
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+    ;
+}
+.logo{
+    border-radius: 10px;
+}
 
 
 .navbar2{
@@ -71,6 +81,7 @@ header{
 .navbar2 img{
     color: #fff;
 }
+
 
 .navbar ul{
     display: flex;
@@ -160,6 +171,31 @@ header{
 body.dark{
     background-color: #232c35;
 }
+.painel.dark{
+    background-color: #9098e0;
+}
+
+
+.painel.dark h4, .painel.dark p{
+    color: #fff;
+}
+
+.produtos.dark h2, .produtos.dark p, 
+.produtos.dark span, .produtos.dark h5, 
+.produtos.dark h4{
+    color: #fff;
+}
+
+footer.dark h4, 
+footer.dark p,
+footer.dark a{
+    color: #fff;
+}
+
+.copyright.dark p{
+    color: #fff;
+}
+
 /* Painel Principal*/
 
 .painel{
@@ -179,6 +215,10 @@ body.dark{
 
 .painel h4{
     padding-bottom: 15px;
+}
+
+.painel h2{
+    color: #fff;
 }
 .painel h1{
     color: #041181;
@@ -341,58 +381,6 @@ body.dark{
     padding: 40px 80px;
 
 }
-
-.banner-container{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 30vh;
-    text-align: center;
-    background-image: url("imgs/cr7.png");
-    min-width: 580px;
-    height: 50vh;
-    padding: 30px;
-    background-size: contain;
-    background-position: top 25% right 15%;
-    background-repeat: no-repeat;
-}
-
-.banner-container h4{
-    color: #000;
-    font-size: 20px;
-    font-weight: 300;
-}
-.banner-container h2{
-    color: #000;
-    font-size: 28px;
-    font-weight: 500;
-     
-}
-.banner-container span{
-    color:#000;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-.banner-container button{
-    font-size: 13px;
-    font-weight: 600;
-    padding: 11px 18px;
-    color: #fff;
-    background-color: #000;
-    cursor: pointer;
-    border: 1px solid #000;
-    outline: none;
-    transition: 0.2s;
-}
-
-.banner-container button:hover{
-    background: #088178;
-    border: 1px solid #088178;
-}
-
 
 
 
@@ -718,6 +706,8 @@ footer a:hover{
     .painel{
         padding: 0 20px;
         background-position: 55%;
+        background-position: top 10vh right -200px;
+
     }
     .produto-detail{
         display: flex;
@@ -751,4 +741,9 @@ footer a:hover{
         margin-left: 70px;
     }
     
+}
+
+@media(max-width: 480px){
+    .painel{
+    }
 }
