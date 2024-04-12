@@ -109,13 +109,15 @@ header{
 #cart{
     color: #fff;
 }
+
+
 /* botao Dark mode */
 .checkbox{
     opacity: 0;
     position: absolute;
 }
 .label {
-    background-color: #fff;
+    background-color: #111;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
@@ -129,8 +131,8 @@ header{
     transform: scale(1.1);
 }
 
-.label .ball{
-    color: #000102;
+.ball{
+    background-color: #fff;
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -143,7 +145,7 @@ header{
     transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .labell .ball {
+.checkbox:checked + .label .ball {
     transform: translateX(24px);
 }
 
@@ -155,7 +157,7 @@ header{
     color: #f39c12;
 }
 
-.painel .dark{
+body.dark{
     background-color: #232c35;
 }
 /* Painel Principal*/

@@ -19,8 +19,8 @@ if (close){
 
 // Dar-mode //
 
-const chk = document.getElementById('chk')
+const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
+chk.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 })
