@@ -185,6 +185,12 @@ body.dark{
 .produtos.dark h4{
     color: #fff;
 }
+.contato.dark span, 
+.contato.dark h2, 
+.contato.dark h3, 
+.contato.dark li{
+    color: #fff;
+}
 
 footer.dark h4, 
 footer.dark p,
@@ -236,7 +242,7 @@ footer.dark a{
 }
 
 
-
+/* Produtos*/
 
 .produtos{
     padding: 40px 80px;
@@ -273,52 +279,6 @@ footer.dark a{
     width: 100%;
     border-radius: 20px;
 
-}
-
-/*Pagina loja*/
-
-
-.shop-header{
-    background-color: #52129c;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 14px;
-
-}
-
-.shop-header h1,
-.shop-header p{
-    color: #fff;
-}
-
-
-
-
-
-.descricao{
-    text-align: start;
-    padding: 10px 0;
-}
-.descricao span{
-    color: #606063;
-    font-size: 12px;
-}
-.descricao h5 {
-    padding-top: 7px;
-    color: #1a1a1a;
-    font-size: 14px
-}
-
-.descricao h4{
-    padding-top: 7px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #088178;
-    
 }
 
 /*Banner Ofertas*/
@@ -371,16 +331,7 @@ footer.dark a{
 
 
 
-/*Section Banner Cr7*/
 
-.banner{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 40px 80px;
-
-}
 
 
 
@@ -402,6 +353,7 @@ footer.dark a{
 }
 
 .des-email p{
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
 }
@@ -743,7 +695,3 @@ footer a:hover{
     
 }
 
-@media(max-width: 480px){
-    .painel{
-    }
-}
