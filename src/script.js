@@ -26,6 +26,7 @@ chk.addEventListener('click', () => {
     document.querySelector('.painel').classList.toggle('dark');
     document.querySelector('.produtos').classList.toggle('dark');
     document.querySelector('.contato').classList.toggle('dark');
+    document.querySelector('.form-contato').classList.toggle('dark');
     document.querySelector('footer').classList.toggle('dark');
     document.querySelector('.copyright').classList.toggle('dark');
 })

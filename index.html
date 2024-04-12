@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
  
@@ -14,7 +14,7 @@
 
   <section class="navbar-logo">
     <div>  
-      <a href="">
+      <a href="index.html">
       <img 
       src="imgs/logo.png" 
       class="logo" 
@@ -35,9 +35,9 @@
     
   <section class="navbar">
       <ul id="nav-ul">
-        <li><a class="active" href="index.html">Pagina Inicial</a></li>
-        <li><a href="pages/shop.html">Loja</a></li>
-        <li><a href="pages/contato.html">Contato</a></li>
+        <li><a class="active" href="#home">Pagina Inicial</a></li>
+        <li><a href="#produtos">Loja</a></li>
+        <li><a href="#contato">Contato</a></li>
         
           <a href="#" id="close-toggle"><img src="imgs/icons/close.png" width="15px" alt=""></a>
     
@@ -70,7 +70,7 @@
 
 <main>
     
-    <section class="painel">
+    <section class="painel"  id="home" >
       <h4>Camisas em Oferta</h4>
       <h2>Super Desconto</h2>
       <h1>todos Nossos Produtos</h1>
@@ -78,7 +78,7 @@
       <button>Shop Now</button>
     </section>
 
-  <section class="produtos">
+  <section class="produtos" id="produtos">
       <h2>Camisas</h2>
       <p>So Aqui Voce Encontra as camisas dos Melhores Clube Do Mundo.</p>
       <article class="produtos-container">
@@ -170,10 +170,10 @@
     <section class="ofertas">
       <h4>Repair Services</h4>
       <h2>Ate <span>70% </span> Em todas Camisetas</h2>
-      <button><a href="pages/shop.html">Explore mais</a></button>
+      <button><a href="#">Explore mais</a></button>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
       <article class="details">
           <span>Entrem em Contato Conosco</span>
           <h2>Venha fazer uma visita em nossa loja fisica</h2>
@@ -306,7 +306,7 @@
 
 
 
-  <script src="script.js"></script>
+  <script src="./src/script.js"></script>
   <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html> 

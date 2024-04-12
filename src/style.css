@@ -37,6 +37,7 @@ p{
 
 body{
     width: 100%;
+    min-height: 290px;
 }
 
 
@@ -59,8 +60,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px
-    ;
+    gap: 50px;
 }
 .logo{
     border-radius: 10px;
@@ -122,90 +122,12 @@ header{
 }
 
 
-/* botao Dark mode */
-.checkbox{
-    opacity: 0;
-    position: absolute;
-}
-.label {
-    background-color: #111;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
 
-    transform: scale(1.1);
-}
-
-.ball{
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-
-    height: 22px;
-    width: 22px;
-
-    transform: translate(0px);
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .ball {
-    transform: translateX(24px);
-}
-
-.fa-moon{
-    color: #f1c40f;
-}
-
-.fa-sun {
-    color: #f39c12;
-}
-
-body.dark{
-    background-color: #232c35;
-}
-.painel.dark{
-    background-color: #9098e0;
-}
-
-
-.painel.dark h4, .painel.dark p{
-    color: #fff;
-}
-
-.produtos.dark h2, .produtos.dark p, 
-.produtos.dark span, .produtos.dark h5, 
-.produtos.dark h4{
-    color: #fff;
-}
-.contato.dark span, 
-.contato.dark h2, 
-.contato.dark h3, 
-.contato.dark li{
-    color: #fff;
-}
-
-footer.dark h4, 
-footer.dark p,
-footer.dark a{
-    color: #fff;
-}
-
-.copyright.dark p{
-    color: #fff;
-}
 
 /* Painel Principal*/
 
 .painel{
-    background-image: url("imgs/lewan.png");
+    background-image: url("../imgs/lewan.png");
     background-color: #c8cadb;
     height: 90vh;
     width: 100%;
@@ -268,18 +190,21 @@ footer.dark a{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
 }
-
-.produto :hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-
-}
-
-
 .produto img{
+    transition: transform 0.3s ease;
     width: 100%;
     border-radius: 20px;
 
 }
+
+.produto:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transform: scale(1.2);
+
+}
+
+
+
 
 /*Banner Ofertas*/
 
@@ -453,7 +378,7 @@ footer a:hover{
     margin-right: 50px;
 }
 
-/* pagina de  Contato*/
+/* Contato*/
 
 .contato{
     padding: 40px 80px;
@@ -569,6 +494,111 @@ footer a:hover{
     font-weight: 600;
     color: #000;
 }
+
+
+/* botao Dark mode */
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.1);
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+body.dark{
+    background-color: #232c35;
+}
+.painel.dark{
+    background-color: #9098e0;
+}
+
+
+.painel.dark h4, .painel.dark p{
+    color: #fff;
+}
+
+.produtos.dark h2, .produtos.dark p, 
+.produtos.dark span, .produtos.dark h5, 
+.produtos.dark h4{
+    color: #fff;
+}
+.contato.dark span, 
+.contato.dark h2, 
+.contato.dark h3, 
+.contato.dark li{
+    color: #fff;
+}
+
+.form-contato.dark span,
+.form-contato.dark p{
+    color: #fff;
+}
+
+footer.dark h4, 
+footer.dark p,
+footer.dark a{
+    color: #fff;
+}
+
+.copyright.dark p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:768px){
