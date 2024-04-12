@@ -34,14 +34,6 @@ p{
     margin: 15px 0 20  0px
 }
 
-.section-p1{
-    padding: 40px 80px;
-    margin: 40px 0;
-}
-
-.section-m1{
-    margin: 40px 0;
-}
 
 body{
     width: 100%;
@@ -101,7 +93,7 @@ header{
 }
 .navbar li a:hover,
 .navbar li a.active{
-    color: #088178;
+    color: #fff;
 }
 
 .navbar li a.active::after,
@@ -109,19 +101,71 @@ header{
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #088178;
+    background-color: #fff;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
+#cart{
+    color: #fff;
+}
+/* botao Dark mode */
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
 
+    transform: scale(1.1);
+}
+
+.label .ball{
+    color: #000102;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .labell .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.painel .dark{
+    background-color: #232c35;
+}
 /* Painel Principal*/
 
 .painel{
     background-image: url("imgs/lewan.png");
+    background-color: #c8cadb;
     height: 90vh;
     width: 100%;
-    background-position: top 10vh right 0;
+    background-position: top 10vh right 20vh;
     background-repeat: no-repeat;
     background-size: 500px;
     padding:  0 80px;
@@ -130,16 +174,17 @@ header{
     align-items: flex-start;
     justify-content: center;
 }
+
 .painel h4{
     padding-bottom: 15px;
 }
 .painel h1{
-    color: #088178;
+    color: #041181;
 }
 
 .painel button{
-    background-color: #088178;
-    color: #1a1a1a;
+    background-color:#041181;
+    color: #fff;
     border: 0;
     border-radius: 50px;
     padding: 10px 80px 14px 65px;
@@ -147,24 +192,6 @@ header{
     font-weight: 700;
     font-size: 15px;
 }
-
-.shop-header{
-    background-color: #464646;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 14px;
-
-}
-
-.shop-header h1,
-.shop-header p{
-    color: #fff;
-}
-
 
 
 
@@ -206,72 +233,25 @@ header{
 
 }
 
-/*Pagina de compra das Camisas*/
+/*Pagina loja*/
 
-.produto-img {
+
+.shop-header{
+    background-color: #52129c;
     width: 100%;
-    margin-right: 50px;
-}
-
-.img{
+    height: 40vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
 }
 
-.img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-.produtos-compra{
-    padding: 40px 80px;
-    margin: 40px 0;
-    display: flex;
-    margin-top: 20px;
-}
-
-.produto-detail{
-    width: 50%;
-    padding-top: 30px;
-}
-.produto-detail h4{
-    padding: 40px 0 20px 0;
-}
-
-.produto-detail h2{
-    font-size: 28px;
-}
-
-.produto-detail select{
-    display: block;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-}
-
-.produto-detail input{
-    width: 50px;
-    height: 47px;
-    padding-left: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.produto-detail button{
-    background-color: #041181;
-    padding: 1;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s;
-    border-radius: 5px;
+.shop-header h1,
+.shop-header p{
     color: #fff;
-    padding: 10px 10px;
-    font-weight: 600;
-    font-size: 14;
 }
-
-
-
 
 
 
@@ -299,9 +279,10 @@ header{
     
 }
 
+/*Banner Ofertas*/
 
 .ofertas{
-    background: radial-gradient(circle, rgba(13,242,132,1) 0%, rgba(55,1,219,1) 100%);
+    background: #041181;
     width: 100%;
     height: 40vh;
     display: flex;
@@ -345,6 +326,10 @@ header{
     background: #088178;
     color: #fff;
 }
+
+
+
+/*Section Banner Cr7*/
 
 .banner{
     display: flex;
@@ -645,6 +630,14 @@ footer a:hover{
 
 
 @media (max-width:768px){
+
+    header{
+        width: 100%;
+    }
+
+
+
+
    #nav-ul {
         display: flex;
         flex-direction: column;
