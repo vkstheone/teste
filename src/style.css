@@ -1,41 +1,42 @@
-
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Spartan', sans-serif, Arial, Helvetica;
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif, Arial, Helvetica;
 
 }
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
 }
 
-h2{
+h2 {
     font-size: 46px;
     line-height: 56px;
     color: #222;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: #222;
 }
 
-h6{
+h6 {
     font-weight: 700;
     font-size: 12px;
 }
-p{
+
+p {
     font-size: 16px;
     color: #464646;
-    margin: 15px 0 20  0px
+    margin: 15px 0 20 0px
 }
 
 
-body{
+body {
     width: 100%;
     min-height: 290px;
 }
@@ -43,31 +44,33 @@ body{
 
 /* Header*/
 
-header{
+header {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
     padding: 20px 80px;
     background: #041181;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     z-index: 999;
     position: sticky;
     top: 0;
-    left:0;
+    left: 0;
 }
-.navbar-logo{
+
+.navbar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-.logo{
+
+.logo {
     border-radius: 10px;
 }
 
 
-.navbar2{
+.navbar2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,40 +78,43 @@ header{
     gap: 10px;
 
 }
-#close-toggle{
-   display: none;
+
+#close-toggle {
+    display: none;
 }
-.navbar2 img{
+
+.navbar2 img {
     color: #fff;
 }
 
 
-.navbar ul{
+.navbar ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar li{
+.navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     transition: 0.3s ease;
 }
+
 .navbar li a:hover,
-.navbar li a.active{
+.navbar li a.active {
     color: #fff;
 }
 
 .navbar li a.active::after,
-.navbar li a:hover::after{
+.navbar li a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -117,7 +123,8 @@ header{
     bottom: -4px;
     left: 20px;
 }
-#cart{
+
+#cart {
     color: #fff;
 }
 
@@ -126,7 +133,7 @@ header{
 
 /* Painel Principal*/
 
-.painel{
+.painel {
     background-image: url("../imgs/lewan.png");
     background-color: #c8cadb;
     height: 90vh;
@@ -134,26 +141,27 @@ header{
     background-position: top 10vh right 20vh;
     background-repeat: no-repeat;
     background-size: 500px;
-    padding:  0 80px;
+    padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.painel h4{
+.painel h4 {
     padding-bottom: 15px;
 }
 
-.painel h2{
+.painel h2 {
     color: #fff;
 }
-.painel h1{
+
+.painel h1 {
     color: #041181;
 }
 
-.painel button{
-    background-color:#041181;
+.painel button {
+    background-color: #041181;
     color: #fff;
     border: 0;
     border-radius: 50px;
@@ -166,12 +174,13 @@ header{
 
 /* Produtos*/
 
-.produtos{
+.produtos {
     padding: 40px 80px;
     margin-top: 150px;
     text-align: center;
 }
-.produtos-container{
+
+.produtos-container {
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -180,7 +189,7 @@ header{
 }
 
 
-.produto{
+.produto {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
@@ -190,7 +199,8 @@ header{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
 }
-.produto img{
+
+.produto img {
     transition: transform 0.3s ease;
     width: 100%;
     border-radius: 20px;
@@ -208,7 +218,7 @@ header{
 
 /*Banner Ofertas*/
 
-.ofertas{
+.ofertas {
     background: #041181;
     width: 100%;
     height: 40vh;
@@ -222,22 +232,22 @@ header{
 
 }
 
-.ofertas h4{
+.ofertas h4 {
     color: #fff;
     font-size: 16px;
 }
 
-.ofertas h2{
+.ofertas h2 {
     color: #fff;
     font-size: 30px;
     padding: 10px 0;
 }
 
-.ofertas span{
+.ofertas span {
     color: #ef3636;
 }
 
-.ofertas button{
+.ofertas button {
     border: none;
     outline: none;
     cursor: pointer;
@@ -249,18 +259,19 @@ header{
     font-weight: 600;
     font-size: 14;
 }
-.ofertas button:hover{
+
+.ofertas button:hover {
     background: #088178;
     color: #fff;
 }
 
 
+/* Email section*/
 
 
 
 
-
-.email-input{
+.email-input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -270,20 +281,20 @@ header{
     margin: 40px 0;
 }
 
-.des-email h4{
+.des-email h4 {
     padding-bottom: 5px;
     font-size: 22px;
     font-weight: 700;
     color: #fff;
 }
 
-.des-email p{
+.des-email p {
     color: #fff;
     font-size: 12px;
     font-weight: 700;
 }
 
-.form-email{
+.form-email {
     display: flex;
     width: 40%;
     gap: 5px;
@@ -291,9 +302,9 @@ header{
 
 
 
-.form-email input{
+.form-email input {
     height: 3.125rem;
-    padding:  0 1.25rem;
+    padding: 0 1.25rem;
     font-size: 15px;
     width: 100%;
     border: 1px solid transparent;
@@ -316,7 +327,9 @@ header{
 }
 
 
-footer{
+/* Rodape*/
+
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -325,7 +338,7 @@ footer{
 }
 
 
-.colunm{
+.colunm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,17 +346,17 @@ footer{
     gap: 30px;
 }
 
-.coluna-footer img{
+.coluna-footer img {
     width: 100px;
     margin-bottom: 30px;
 }
 
-.icon img{
+.icon img {
     width: 40px;
     margin-right: 20px;
 }
 
-footer h4{
+footer h4 {
     font-size: 24px;
     padding-bottom: 20px;
 }
@@ -360,11 +373,11 @@ footer a {
     margin: 0 0 8px 0;
 }
 
-footer a:hover{
+footer a:hover {
     color: #088178;
 }
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
@@ -373,56 +386,57 @@ footer a:hover{
 
 /* Pagina de Compra*/
 
-.produto-img{
+.produto-img {
     width: 40%;
     margin-right: 50px;
 }
 
 /* Contato*/
 
-.contato{
+.contato {
     padding: 40px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
 
 
-.details{
+.details {
     width: 40%;
 
     font-size: 12px;
 }
 
-.details h2{
+.details h2 {
     font-size: 26px;
     line-height: 35px;
     padding: 20px 0;
 }
 
-.details h3{
+.details h3 {
     font-size: 16px;
     padding-bottom: 15px;
 }
 
-.details li{
+.details li {
     list-style: none;
     display: flex;
     padding: 10px 0;
 }
 
-.mapa{
+.mapa {
     width: 55%;
     height: 400px;
 }
 
-.mapa iframe{
+.mapa iframe {
     width: 100%;
     height: 100%;
 }
-.form-contato{
+
+.form-contato {
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -430,7 +444,7 @@ footer a:hover{
     border: 1px solid #e1e1e1;
 }
 
-.form-contato form{
+.form-contato form {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -441,7 +455,7 @@ footer a:hover{
 }
 
 .form-contato form input,
-.form-contato form textarea{
+.form-contato form textarea {
     width: 100%;
     padding: 12px 15px;
     outline: none;
@@ -449,7 +463,7 @@ footer a:hover{
     border: 1px solid #e1e1e1;
 }
 
-.form-contato form button{
+.form-contato form button {
     border: none;
     outline: none;
     cursor: pointer;
@@ -463,18 +477,18 @@ footer a:hover{
 
 }
 
-.dev{
+.dev {
     margin-top: 105px;
 
 }
 
-.dev article p{
+.dev article p {
     padding-bottom: 25px;
     display: flex;
     align-items: flex-start;
 }
 
-.dev img{
+.dev img {
     border-radius: 30px;
     width: 65px;
     height: 65px;
@@ -482,13 +496,13 @@ footer a:hover{
     margin-right: 15px;
 }
 
-.dev  p{
+.dev p {
     margin: 0;
     font-size: 13px;
     line-height: 25px;
 }
 
-.dev p span{
+.dev p span {
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -497,10 +511,11 @@ footer a:hover{
 
 
 /* botao Dark mode */
-.checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
 }
+
 .label {
     background-color: #111;
     border-radius: 50px;
@@ -516,7 +531,7 @@ footer a:hover{
     transform: scale(1.1);
 }
 
-.ball{
+.ball {
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -530,11 +545,11 @@ footer a:hover{
     transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
+.checkbox:checked+.label .ball {
     transform: translateX(24px);
 }
 
-.fa-moon{
+.fa-moon {
     color: #f1c40f;
 }
 
@@ -542,75 +557,66 @@ footer a:hover{
     color: #f39c12;
 }
 
-body.dark{
+body.dark {
     background-color: #232c35;
 }
-.painel.dark{
+
+.painel.dark {
     background-color: #9098e0;
 }
 
 
-.painel.dark h4, .painel.dark p{
+.painel.dark h4,
+.painel.dark p {
     color: #fff;
 }
 
-.produtos.dark h2, .produtos.dark p, 
-.produtos.dark span, .produtos.dark h5, 
-.produtos.dark h4{
+.produtos.dark h2,
+.produtos.dark p,
+.produtos.dark span,
+.produtos.dark h5,
+.produtos.dark h4 {
     color: #fff;
 }
-.contato.dark span, 
-.contato.dark h2, 
-.contato.dark h3, 
-.contato.dark li{
+
+.contato.dark span,
+.contato.dark h2,
+.contato.dark h3,
+.contato.dark li {
     color: #fff;
 }
 
 .form-contato.dark span,
-.form-contato.dark p{
+.form-contato.dark p {
     color: #fff;
 }
 
-footer.dark h4, 
+footer.dark h4,
 footer.dark p,
-footer.dark a{
+footer.dark a {
     color: #fff;
 }
 
-.copyright.dark p{
+.copyright.dark p {
     color: #fff;
 }
 
 
 
 
+/*Responsividade*/
 
 
+@media (max-width:768px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px){
-
-    header{
+    header {
         width: 100%;
     }
 
 
 
 
-   #nav-ul {
+    #nav-ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -621,58 +627,63 @@ footer.dark a{
         height: 100vh;
         width: 300px;
         background-color: #e3e6f3;
-        box-shadow: 0 40px 60px rgba(0,0,0, 0.1);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.5s;
     }
 
 
-    #nav-ul.active{
+    #nav-ul.active {
         right: 0px;
     }
 
 
-    .navbar li{
+    .navbar li {
         margin-bottom: 25px;
     }
 
-    .navbar2{
+    .navbar2 {
         display: flex;
-       
-    
+
+
     }
-    #close-toggle{
+
+    #close-toggle {
         display: flex;
         position: absolute;
         top: 30px;
         left: 30px;
     }
-    #cart{
+
+    #cart {
         display: none;
     }
 
 
-    .painel{
+    .painel {
         height: 70vh;
         padding: 0 80px;
         background-position: top 30% right 30%;
     }
-    .produtos-container{
+
+    .produtos-container {
         justify-content: center;
         gap: 25px;
     }
-    .form-email{
-        width: 70%;
-   }
 
-   /*Pagina de Contato*/
-   .form-contato{
-     padding: 40px;
-   }
-   .form-contato form{
-     width: 65%;
-     
-   }
+    .form-email {
+        width: 70%;
+    }
+
+    /*Pagina de Contato*/
+    .form-contato {
+        padding: 40px;
+    }
+
+    .form-contato form {
+        width: 65%;
+
+    }
 
 
 
@@ -681,47 +692,51 @@ footer.dark a{
 }
 
 
-@media (max-width: 577px){
-    header{
+@media (max-width: 577px) {
+    header {
         padding: 10px 30px;
     }
-    .painel{
+
+    .painel {
         padding: 0 20px;
         background-position: 55%;
         background-position: top 10vh right -200px;
 
     }
-    .produto-detail{
+
+    .produto-detail {
         display: flex;
         flex-direction: column;
     }
 
-       /*Pagina de Contato*/ 
-       .contato{
+
+    .contato {
         flex-direction: column;
     }
-    .details{
+
+    .details {
         width: 100%;
         margin-bottom: 30px;
     }
-    .mapa{
+
+    .mapa {
         width: 100%;
     }
 
-    .form-contato{
+    .form-contato {
         margin: 10px;
         padding: 30px 10px;
         flex-wrap: wrap;
     }
 
-    .form-contato form{
+    .form-contato form {
         width: 100%;
         margin-bottom: 30px;
     }
-    .dev{
+
+    .dev {
         width: 100%;
         margin-left: 70px;
     }
-    
-}
 
+}
